@@ -1,0 +1,22 @@
+﻿<Window x:Class="Laba.Window_for_not_boss"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Laba"
+        mc:Ignorable="d"
+        Title="Window_for_not_boss" Height="450" Width="800">
+    <Grid>
+        <DataGrid x:Name="ClientsGrid" AutoGenerateColumns="False" HorizontalGridLinesBrush="DarkGray" RowBackground="LightGray" AlternatingRowBackground="White">
+            <DataGrid.Columns>
+                <DataGridTextColumn Header="Фамилия/login" Binding="{Binding Path=Surname_not}" Width="100" IsReadOnly="True"/>
+                <DataGridTextColumn Header="Имя Фамилия" Binding="{Binding Path=Name_not}" Width="130" IsReadOnly="True"/>
+                <DataGridTextColumn Header="Должность" Binding="{Binding Path=Post_not}" Width="100" IsReadOnly="True"/>
+                <DataGridTextColumn Header="Адрес" Binding="{Binding Path=Adress_not}" Width="100" IsReadOnly="True"/>
+                <DataGridTextColumn Header="Личный телефон" Binding="{Binding Path=Phone_not}" Width="100" IsReadOnly="True"/>
+                <DataGridTextColumn Header="Рабочий телефон" Binding="{Binding Path=Worked_Phone_not}" Width="100" IsReadOnly="True"/>
+                <DataGridTextColumn Header="Пароль" Binding="{Binding Path=Password_not}" Width="100" IsReadOnly="True"/>
+            </DataGrid.Columns>
+        </DataGrid>
+    </Grid>
+</Window>

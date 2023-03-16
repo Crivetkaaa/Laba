@@ -1,0 +1,23 @@
+﻿<Window x:Class="Laba.Window_for_mini_boss"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Laba"
+        mc:Ignorable="d"
+        Title="Window_for_mini_boss" Height="450" Width="800">
+    <Grid>
+        <DataGrid x:Name="ClientsGrid" AutoGenerateColumns="False" HorizontalGridLinesBrush="DarkGray" RowBackground="LightGray" AlternatingRowBackground="White">
+            <DataGrid.Columns>
+                <DataGridTextColumn Header="Фамилия/login" Binding="{Binding Path=Surname_mini}" Width="100" IsReadOnly="True"/>
+                <DataGridTextColumn Header="Имя Фамилия" Binding="{Binding Path=Name_mini}" Width="130" IsReadOnly="True"/>
+                <DataGridTextColumn Header="Должность" Binding="{Binding Path=Post_mini}" Width="100" IsReadOnly="True"/>
+                <DataGridTextColumn Header="Адрес" Binding="{Binding Path=Adress_mini}" Width="100" IsReadOnly="True"/>
+                <DataGridTextColumn Header="Личный телефон" Binding="{Binding Path=Phone_mini}" Width="100" IsReadOnly="True"/>
+                <DataGridTextColumn Header="Рабочий телефон" Binding="{Binding Path=Worked_Phone_mini}" Width="100" IsReadOnly="True"/>
+                <DataGridTextColumn Header="Пароль" Binding="{Binding Path=Password_mini}" Width="100" IsReadOnly="True"/>
+            </DataGrid.Columns>
+        </DataGrid>
+        <Button x:Name="Update" Content="Добавить" HorizontalAlignment="Left" Margin="372,377,0,0" VerticalAlignment="Top" Click="Update_Click"/>
+    </Grid>
+</Window>
